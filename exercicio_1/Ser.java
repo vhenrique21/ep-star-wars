@@ -7,6 +7,7 @@ public class Ser {
 	private String especie;
 	private String nascimento;
 	private Planeta planetaNatal;
+	private int vida;
 	
 	public String getSexo() {
 		return sexo;
