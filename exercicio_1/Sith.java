@@ -5,6 +5,8 @@ public class Sith extends UsuarioDaForca {
 	private double percentualDeRaiva;
 	private boolean temPoderesDeTelepatia;
 	
+	protected int tipo = 1;
+	
 	public double getPercentualDeRaiva() {
 		return percentualDeRaiva;
 	}

@@ -6,6 +6,8 @@ public class Jedi extends UsuarioDaForca {
 	private boolean temPoderesDePersuasao;
 	private boolean temPoderesDeTelecinese;
 	private double porcentualDePazInterna;
+	
+	protected int tipo = 0;
 
 	
 	public boolean isTemPoderesDePersuasao() {

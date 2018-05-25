@@ -7,8 +7,14 @@ public class Ser {
 	private String especie;
 	private String nascimento;
 	private Planeta planetaNatal;
-	private int vida;
+	private int vida = 150;
 	
+	public int getVida() {
+		return vida;
+	}
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
 	public String getSexo() {
 		return sexo;
 	}
