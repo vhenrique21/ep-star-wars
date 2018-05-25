@@ -9,6 +9,12 @@ public class Jedi extends UsuarioDaForca {
 	
 	protected int tipo = 0;
 
+	public void turno() {
+		//modo: 0 = Esquiva e 1 = Ataque
+		super.defineAcao[0]=1;
+		super.turno();
+		
+		}
 	
 	public boolean isTemPoderesDePersuasao() {
 		return temPoderesDePersuasao;

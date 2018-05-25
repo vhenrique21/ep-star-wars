@@ -7,6 +7,12 @@ public class Sith extends UsuarioDaForca {
 	
 	protected int tipo = 1;
 	
+	public void turno() {
+		//modo: 0 = Esquiva e 1 = Ataque
+		super.defineAcao[0]=0;
+		super.turno();
+		}
+	
 	public double getPercentualDeRaiva() {
 		return percentualDeRaiva;
 	}
