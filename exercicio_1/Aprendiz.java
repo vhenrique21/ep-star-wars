@@ -6,6 +6,7 @@ public class Aprendiz extends Sith {
 
 	public boolean isSabeMontarSabre() {
 		return sabeMontarSabre;
+		
 	}
 
 	public void setSabeMontarSabre(boolean sabeMontarSabre) {
