@@ -4,8 +4,7 @@ public class Academia {
 	
 	private String tipo;
 	private String []membrosConselho;
-	private String quemAdministra;
-	private int valor = 36;
+	private String quemAdministra;	
 	
 	public String getTipo() {
 		return tipo;
