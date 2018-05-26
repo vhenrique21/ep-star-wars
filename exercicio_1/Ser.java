@@ -7,7 +7,7 @@ public class Ser {
 	private String especie;
 	private String nascimento;
 	private Planeta planetaNatal;
-	private int vida = 150;
+	private int vida = 100;
 	
 	public int getVida() {
 		return vida;
@@ -45,8 +45,4 @@ public class Ser {
 	public void setPlanetaNatal(Planeta planetaNatal) {
 		this.planetaNatal = planetaNatal;
 	}
-	
-	
-	
-
 }
