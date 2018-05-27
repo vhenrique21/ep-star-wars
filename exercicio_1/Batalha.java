@@ -91,7 +91,7 @@ public class Batalha {
 			else {
 				System.out.println("Fim do Turno.\n");
 			}			
-			
+			 
 		}
 	}
 }

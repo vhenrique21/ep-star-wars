@@ -10,7 +10,7 @@ public class UsuarioDaForca extends Ser {
 	protected int []defineAcao = new int[3];
 	public double dominioComAForca = Math.round((1 + geradorNumeros.nextDouble())*100.0)/100.0;  // Gera números aleatórios de proeficiencia para força com intervalo entre 1 e 2
 	public double dominioComOSabre = Math.round((1 + geradorNumeros.nextDouble())*100.0)/100.0;  // Gera números aleatórios de proeficiencia para sabre com intervalo entre 1 e 2
-
+ 
 	public void turno() {
 		// modo: 0 = Esquiva e 1 = AtaqueForca e 2 = AtaqueSabre
 		//Atribui valores ao vetor que indica se o personagem é jedi ou sith, qual o tipo de ataque e o nome e dano da habilidade usada;

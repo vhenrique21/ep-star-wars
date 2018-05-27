@@ -182,7 +182,7 @@ public class CasosDeAtaque {
 		System.out.println("Mestre Jedi sofre " + novodano + " Hit Points, dos quais " + Math.round(Habilidades.habilidadeSithSabreDano[Batalha.valorSith]*(sith.dominioComAForca-1)) + " são devidos à proeficiencia do Sith com o Sabre.");
 		valor = jedi.getVida() - (int)novodano;
 		jedi.setVida(valor);
-
+ 
 		if (jedi.getVida() == 0) {
 			return;
 		}
