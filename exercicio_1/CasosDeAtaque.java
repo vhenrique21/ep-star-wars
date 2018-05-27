@@ -72,7 +72,7 @@ public class CasosDeAtaque {
 		valor = sith.getVida() - (int)novoDano;
 		sith.setVida(valor);
 
-		if (sith.getVida() == 0) {
+		if (sith.getVida() <= 0) {
 			return;
 		}
 
@@ -96,7 +96,7 @@ public class CasosDeAtaque {
 		valor = jedi.getVida() - (int)novoDano;
 		jedi.setVida(valor);
 
-		if (jedi.getVida() == 0) {
+		if (jedi.getVida() <= 0) {
 			return;
 		}
 
@@ -128,7 +128,7 @@ public class CasosDeAtaque {
 		valor = sith.getVida() - (int)novoDano;
 		sith.setVida(valor);
 
-		if (sith.getVida() == 0) {
+		if (sith.getVida() <= 0) {
 			return;
 		}
 
@@ -146,7 +146,7 @@ public class CasosDeAtaque {
 		valor = jedi.getVida() - (int)novoDano;
 		jedi.setVida(valor);
 		
-		if (jedi.getVida() == 0) {
+		if (jedi.getVida() <= 0) {
 			return;
 		}
 
@@ -165,7 +165,7 @@ public class CasosDeAtaque {
 		valor = sith.getVida() - (int)novoDano;
 		sith.setVida(valor);
 
-		if (sith.getVida() == 0) {
+		if (sith.getVida() <= 0) {
 			return;
 		}
 
@@ -183,7 +183,7 @@ public class CasosDeAtaque {
 		valor = jedi.getVida() - (int)novoDano;
 		jedi.setVida(valor);
  
-		if (jedi.getVida() == 0) {
+		if (jedi.getVida() <= 0) {
 			return;
 		}
 
