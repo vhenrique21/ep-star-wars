@@ -1,10 +1,12 @@
 package exercicio_1;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Batalha {
 
-	Random gerador = new Random();
+	static Random gerador = new Random();
+	static DecimalFormat numberFormat = new DecimalFormat("#");
 	
 	// VETOR[0] ---> Tipo: [1] para Jedi e [0] para Sith.	
 	// VETOR[1] ---> Modo: [0] = Esquiva,  [1] = AtaqueForca e [2] = AtaqueSabre.	
@@ -21,9 +23,11 @@ public class Batalha {
 	public static void main(String[] args) {
 		// Cria os objetos Sith e Jedi
 		Lorde lordeSith = new Lorde();
-		Mestre mestreJedi = new Mestre();
+		Mestre mestreJedi = new Mestre();		
+		System.out.println("A Proeficiencia do Jedi com Sabre é " + numberFormat.format((mestreJedi.dominioComOSabre - 1)*100) + "% e a sua proeficiencia com a Força é " + numberFormat.format((mestreJedi.dominioComAForca - 1)*100) + "%");
+		System.out.println("A Proeficiencia do Sith com Sabre é " + numberFormat.format((lordeSith.dominioComOSabre - 1)*100) + "% e a sua proeficiencia com a Força é " + numberFormat.format((lordeSith.dominioComAForca - 1)*100) + "%\n");
 		
-		while(lordeSith.getVida() >= 0 && mestreJedi.getVida() >= 0) {
+		while(lordeSith.getVida() >= 0 && mestreJedi.getVida() >= 0) { 
 			
 			i++;
 			System.out.println("Inicio do turno " + i +  ":");
@@ -71,14 +75,13 @@ public class Batalha {
 			if(mestreJedi.getVida() < 0) {mestreJedi.setVida(0);}
 			if(lordeSith.getVida() < 0) {lordeSith.setVida(0);}
 			
-			System.out.println("Vida Mestre Jedi: " + mestreJedi.getVida());
+			System.out.println("\nVida Mestre Jedi: " + mestreJedi.getVida());
 			System.out.println("Vida Lorde Sith: " + lordeSith.getVida());
 			
 			if(mestreJedi.getVida() <= 0) {
 				System.out.println("\nMestre Jedi morreu.");
 				System.out.println("Lorde Sith ganhou.");
 				System.out.println("\nFim do Jogo.");
-				
 				break;
 			}
 			else if(lordeSith.getVida() <= 0) {
@@ -88,9 +91,9 @@ public class Batalha {
 				break;
 			}
 			else {
-				System.out.println("Fim do Turno.\n");
+				System.out.println("\nFim do Turno.\n");
 			}			
-			
+			 
 		}
 	}
 }
