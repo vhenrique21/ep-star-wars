@@ -77,7 +77,7 @@ public class Batalha {
 			if(mestreJedi.getVida() <= 0) {
 				System.out.println("\nMestre Jedi morreu.");
 				System.out.println("Lorde Sith ganhou.");
-				System.out.println("Fim do Jogo.");
+				System.out.println("\nFim do Jogo.");
 				break;
 			}
 			else if(lordeSith.getVida() <= 0) {
