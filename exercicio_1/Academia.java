@@ -2,6 +2,8 @@ package exercicio_1;
 
 public class Academia {
 	
+	//Essa classe representa uma academia
+	
 	private String tipo;
 	private String []membrosConselho;
 	private String quemAdministra;	

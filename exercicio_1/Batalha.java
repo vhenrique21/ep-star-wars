@@ -22,6 +22,8 @@ public class Batalha {
 		// Cria os objetos Sith e Jedi
 		Lorde lordeSith = new Lorde();
 		Mestre mestreJedi = new Mestre();
+		System.out.println("A Proeficiencia do Jedi com Sabre é " + mestreJedi.dominioComOSabre + " e a sua proeficiencia com a Força é " + mestreJedi.dominioComAForca);
+		System.out.println("A Proeficiencia do Sith com Sabre é " + lordeSith.dominioComOSabre + " e a sua proeficiencia com a Força é " + lordeSith.dominioComAForca);
 		
 		while(lordeSith.getVida() >= 0 && mestreJedi.getVida() >= 0) {
 			
