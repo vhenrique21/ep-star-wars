@@ -65,7 +65,7 @@ public class CasosDeAtaque {
 		valor = sith.getVida() - Habilidades.habilidadeJediForcaDano[Batalha.valorJedi];
 		sith.setVida(valor);
 
-		if (sith.getVida() == 0) {
+		if (sith.getVida() <= 0) {
 			return;
 		}
 
@@ -87,7 +87,7 @@ public class CasosDeAtaque {
 		valor = jedi.getVida() - Habilidades.habilidadeSithForcaDano[Batalha.valorSith];
 		jedi.setVida(valor);
 
-		if (jedi.getVida() == 0) {
+		if (jedi.getVida() <= 0) {
 			return;
 		}
 
@@ -117,7 +117,7 @@ public class CasosDeAtaque {
 		valor = sith.getVida() - Habilidades.habilidadeJediForcaDano[Batalha.valorJedi];
 		sith.setVida(valor);
 
-		if (sith.getVida() == 0) {
+		if (sith.getVida() <= 0) {
 			return;
 		}
 
@@ -133,7 +133,7 @@ public class CasosDeAtaque {
 		valor = jedi.getVida() - Habilidades.habilidadeSithForcaDano[Batalha.valorSith];
 		jedi.setVida(valor);
 
-		if (jedi.getVida() == 0) {
+		if (jedi.getVida() <= 0) {
 			return;
 		}
 
@@ -150,7 +150,7 @@ public class CasosDeAtaque {
 		valor = sith.getVida() - Habilidades.habilidadeJediSabreDano[Batalha.valorJedi];
 		sith.setVida(valor);
 
-		if (sith.getVida() == 0) {
+		if (sith.getVida() <= 0) {
 			return;
 		}
 
@@ -166,7 +166,7 @@ public class CasosDeAtaque {
 		valor = jedi.getVida() - Habilidades.habilidadeSithSabreDano[Batalha.valorSith];
 		jedi.setVida(valor);
 
-		if (jedi.getVida() == 0) {
+		if (jedi.getVida() <= 0) {
 			return;
 		}
 
