@@ -3,11 +3,13 @@ package exercicio_1;
 import java.util.Random;
 
 public class UsuarioDaForca extends Ser {
-
+	
 	private boolean MidiClorians;
 	static Random geradorNumeros = new Random();
 	protected int tipo;
 	protected int []defineAcao = new int[3];
+	public double dominioComAForca = Math.round((1 + geradorNumeros.nextDouble())*100.0)/100.0;  // Gera números aleatórios de proeficiencia para força com intervalo entre 1 e 2
+	public double dominioComOSabre = Math.round((1 + geradorNumeros.nextDouble())*100.0)/100.0;  // Gera números aleatórios de proeficiencia para sabre com intervalo entre 1 e 2
 
 	public void turno() {
 		// modo: 0 = Esquiva e 1 = AtaqueForca e 2 = AtaqueSabre
@@ -38,5 +40,7 @@ public class UsuarioDaForca extends Ser {
 	public void setMidiClorians(boolean midiClorians) {
 		MidiClorians = midiClorians;
 	}
+	
+	
 
 }
